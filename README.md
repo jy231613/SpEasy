@@ -20,12 +20,13 @@ SpEasy:最终封装结果,在Application中初始化之后,可以做到一行代
 4. 通过操作类来存储和删除数据
 ![存储数据](https://images.gitee.com/uploads/images/2018/0727/111809_d9b430dc_1883971.png "效果图3.png")
 ![查询数据](https://images.gitee.com/uploads/images/2018/0727/111859_d06f0eca_1883971.png "效果图4.png")
+5. 如果需要处理结果,可以使用封装的commit提交的方法putxxx(),这类方法带有boolean的返回值,表示是否存储成功;
 
 #### 注意事项
 
-1. 
-2. xxxx
-3. xxxx
+1. 进行数据存储和查询之前必须进行初始化操作,不然会报空指针;
+2. 目前对Set<String>没有支持,后面再加,支持其他基本类型{String,int,long,boolean,float};
+3. 后面预计增加Config配置类,把一些写死的东西规整到配置类信息中;
 
 #### 联系我
 
